@@ -1,0 +1,12 @@
+<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm">
+    <ul class="nav bs-docs-sidenav">
+        <li ng-repeat="menu in menuItems" ui-sref-active="active" >
+            <a ui-sref="{{menu.url}}">{{menu.name}}</a>
+            <ul class="nav">
+                <li ng-repeat="subMenu in menu.menus"  >
+                    <a ui-sref="{{subMenu.url}}">{{subMenu.name}}</a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</nav>

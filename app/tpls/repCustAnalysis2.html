@@ -1,0 +1,15 @@
+<div ng-controller="repCustAnalysis2Ctrl">
+<form class ="form-inline">
+    <hao-web-users user="user"></hao-web-users>
+    <button type="button" class="btn btn-default" ng-click="retrieve()">查询</button>
+</form>
+
+<hr/>
+
+    <fusioncharts
+            width="600"
+            height="400"
+            type="bar2d"
+            dataSource="{{myDataSource}}">
+    </fusioncharts>
+</div>
